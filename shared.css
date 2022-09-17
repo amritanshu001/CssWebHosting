@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.main-header {
+  width: 100%;
+  background: #e27d60;
+  padding: 8px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.brand-div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  text-decoration: none;
+  color: #142218;
+  font-weight: bold;
+  font-size: 1.375rem;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 100px);
+  text-align: right;
+  vertical-align: middle;
+}
+
+.main-nav__lists {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__list {
+  display: inline-block;
+  padding: 4px 5px;
+}
+
+.main-nav__list a {
+  color: #142218;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.main-nav__list a:hover,
+.main-nav__list a:active {
+  color: white;
+  font-weight: bold;
+  border-bottom: solid white 5px;
+}
+
+.main-nav__list--cta a {
+  color: white;
+  background-color: #ff1b68;
+  padding: 8px 16px;
+  margin-left: 30px;
+  border-radius: 8px;
+}
+
+.main-nav__list--cta a:hover,
+.main-nav__list--cta a:active {
+  color: #ff1b68;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.plan__button {
+  background: #05386b;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #05386b;
+  box-shadow: 1px 1px 1px 1px #05386b;
+  cursor: pointer;
+  font: inherit;
+}
+
+.plan__button:hover {
+  background: white;
+  color: #05386b;
+}
+
+.main-footer {
+  background: black;
+  margin-top: 16px;
+  padding: 8px;
+}
+
+.main-footer__links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  text-align: center;
+}
+
+.main-footer__link a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  margin: 16px;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
