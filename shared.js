@@ -17,15 +17,19 @@ for (button of selectButtons) {
 
 backdrop.addEventListener("click", () => {
   backdrop.style.display = "none";
-  modal.style.display = "none";
+  if (modal) {
+    modal.style.display = "none";
+  }
   mobileNav.style.display = "none";
   mainHeader.style.display = "block";
 });
 
-negativeResponseButton.addEventListener("click", () => {
-  backdrop.style.display = "none";
-  modal.style.display = "none";
-});
+if (negativeResponseButton) {
+  negativeResponseButton.addEventListener("click", () => {
+    backdrop.style.display = "none";
+    modal.style.display = "none";
+  });
+}
 
 menuIcon.addEventListener("click", () => {
   backdrop.style.display = "block";
