@@ -42,7 +42,7 @@ body {
 
 .main-nav {
   display: inline-block;
-  width: calc(100% - 100px);
+  width: calc(100% - 150px);
   text-align: right;
   vertical-align: middle;
 }
@@ -57,20 +57,24 @@ body {
   padding: 4px 5px;
 }
 
-.main-nav__list a {
+.main-nav__list a,
+.mobile-main-nav__list a {
   color: #142218;
   text-decoration: none;
   padding: 3px;
 }
 
 .main-nav__list a:hover,
-.main-nav__list a:active {
+.main-nav__list a:active,
+.mobile-main-nav__list a:hover,
+.mobile-main-nav__list a:active {
   color: white;
   font-weight: bold;
   border-bottom: solid white 5px;
 }
 
-.main-nav__list--cta a {
+.main-nav__list--cta a,
+.mobile-main-nav__list--cta a {
   color: white;
   background-color: #ff1b68;
   padding: 8px 16px;
@@ -79,7 +83,9 @@ body {
 }
 
 .main-nav__list--cta a:hover,
-.main-nav__list--cta a:active {
+.main-nav__list--cta a:active,
+.mobile-main-nav__list--cta a:hover,
+.mobile-main-nav__list--cta a:active {
   color: #ff1b68;
   background-color: white;
   font-weight: bold;
@@ -132,4 +138,40 @@ body {
 .main-footer__link a:hover,
 .main-footer__link a:active {
   color: #ccc;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 200, "opsz" 24;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  color: #0e4f1f;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100vh;
+  background-color: rgb(216, 175, 175);
+  z-index: 300;
+}
+
+.mobile-nav > .brand-div {
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  border-bottom: 2px white solid;
+}
+
+.mobile-main-nav {
+  position: absolute;
+  top: 3rem;
+  text-align: center;
+}
+.mobile-main-nav__list {
+  list-style: none;
+  margin-top: 2rem;
 }
