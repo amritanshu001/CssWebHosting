@@ -20,12 +20,26 @@ body {
 
 .main-header {
   width: 100%;
-  background: #e27d60;
+  background: #19b84c;
   padding: 8px 16px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
+  height: 3rem;
+}
+
+main {
+  min-height: calc(100vh - 3rem - 2.5rem);
+  padding-top: 0.5rem;
+  position: relative;
+  z-index: -1;
+}
+
+@media (min-width: 40rem) {
+  .main-header > .material-symbols-outlined {
+    display: none;
+  }
 }
 
 .brand-div {
@@ -41,10 +55,16 @@ body {
 }
 
 .main-nav {
-  display: inline-block;
-  width: calc(100% - 150px);
-  text-align: right;
-  vertical-align: middle;
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .main-nav {
+    display: inline-block;
+    width: calc(100% - 150px);
+    text-align: right;
+    vertical-align: middle;
+  }
 }
 
 .main-nav__lists {
@@ -123,8 +143,8 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
   text-align: center;
+  margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -133,6 +153,14 @@ body {
   text-decoration: none;
   padding: 8px;
   margin: 16px;
+}
+
+@media (min-width: 40rem) {
+  .main-footer__link {
+    display: inline-block;
+    text-align: center;
+    margin: 0 1rem;
+  }
 }
 
 .main-footer__link a:hover,
@@ -152,9 +180,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 80%;
   height: 100vh;
-  background-color: rgb(216, 175, 175);
+  background-color: #19b84c;
   z-index: 300;
 }
 

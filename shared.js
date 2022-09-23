@@ -21,7 +21,7 @@ backdrop.addEventListener("click", () => {
     modal.style.display = "none";
   }
   mobileNav.style.display = "none";
-  mainHeader.style.display = "block";
+  //mainHeader.style.display = "block";
 });
 
 if (negativeResponseButton) {
@@ -34,5 +34,5 @@ if (negativeResponseButton) {
 menuIcon.addEventListener("click", () => {
   backdrop.style.display = "block";
   mobileNav.style.display = "block";
-  mainHeader.style.display = "none";
+  //mainHeader.style.display = "none";
 });

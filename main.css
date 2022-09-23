@@ -1,5 +1,5 @@
 #product-overview {
-  background: url("freedom.jpg") no-repeat left 20% bottom 70% / cover
+  background: url("freedom.jpg") no-repeat left 10% bottom 70% / cover
     border-box;
   /* background-size: cover;
   background-repeat: no-repeat;
@@ -7,15 +7,9 @@
   background-origin: border-box;
   background-clip: border-box; */
   width: 100vw;
-  height: 33vw;
+  height: 33vh;
   margin-top: 2.5rem;
   position: relative;
-}
-
-.section-title {
-  color: #41b3a3;
-  font-weight: bold;
-  text-align: center;
 }
 
 #product-overview h1 {
@@ -24,6 +18,24 @@
   position: absolute;
   bottom: 1%;
   left: 1%;
+  font-size: 1rem;
+}
+
+@media (min-width: 40rem) {
+  #product-overview {
+    background-position: left 10% bottom 20%;
+    height: 50vh;
+  }
+
+  #product-overview h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.section-title {
+  color: #41b3a3;
+  font-weight: bold;
+  text-align: center;
 }
 
 .plan-list {
@@ -33,29 +45,47 @@
 }
 
 .plan {
-  display: inline-block;
+  display: block;
   background: #d5ffdc;
   text-align: center;
-  width: 30%;
+  width: 80%;
   padding: 16px;
-  margin: 8px;
+  margin: 1.25rem auto;
   border-radius: 8px;
-  vertical-align: middle;
+
+  /* vertical-align: middle; */
 }
 
 .plan ul {
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 
 .plan li {
-  margin: 4px;
+  margin: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  .plan {
+    display: inline-block;
+    width: 30%;
+    margin: 8px;
+    min-width: 15rem;
+    max-width: 12rem;
+  }
 }
 
 .recommended {
   background: #19b84c;
   color: aliceblue;
-  box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.5); */
+}
+
+@media (min-width: 40rem) {
+  .recommended {
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .recommended > h1:first-of-type {
@@ -78,14 +108,19 @@
   margin: 12px;
 }
 
+.sales-pitch__features {
+  padding: 0;
+}
+
 .sales-pitch__features li {
-  display: inline-block;
+  /* display: inline-block; */
   color: white;
   font-weight: bold;
   list-style: none;
-  width: 30%;
+  width: 100%;
   text-align: center;
   vertical-align: top;
+  margin-bottom: 0.5rem;
 }
 
 .sales-pitch__features li > div {
@@ -94,7 +129,33 @@
   height: 128px;
   border: solid grey;
   border-radius: 50%;
-  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sales-pitch__features li > p {
+  display: inline-block;
+  width: 40%;
+  vertical-align: middle;
+}
+
+@media (min-width: 40rem) {
+  .sales-pitch__features li {
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+  }
+
+  .sales-pitch__features li > div {
+    display: block;
+    margin: 0.5rem auto;
+  }
+
+  .sales-pitch__features li > p {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
 }
 
 .modal {
