@@ -8,9 +8,9 @@
   margin: auto;
 }
 
-.testimonial:first-of-type {
+/* .testimonial:first-of-type {
   margin-top: 96px;
-}
+} */
 
 .testimonial__image-container {
   /* width: 65%; */
@@ -29,7 +29,6 @@
   text-align: left;
   padding: 14px;
 }
-
 
 #customer-2.testimonial {
   text-align: right;
@@ -65,7 +64,7 @@
   margin: 3px;
 }
 
-@media (min-width:40rem){
+@media (min-width: 40rem) {
   .testimonial {
     font-size: 1.25rem;
   }
@@ -92,5 +91,4 @@
   .testimonial__subtitle {
     font-size: 1.125rem;
   }
-
 }

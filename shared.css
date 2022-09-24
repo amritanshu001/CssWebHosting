@@ -34,6 +34,7 @@ main {
   padding-top: 0.5rem;
   position: relative;
   z-index: -1;
+  margin-top: 2.5rem;
 }
 
 @media (min-width: 40rem) {
@@ -171,7 +172,7 @@ main {
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 200, "opsz" 24;
   vertical-align: middle;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   color: #0e4f1f;
 }
 

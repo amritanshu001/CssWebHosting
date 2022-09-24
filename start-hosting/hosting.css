@@ -1,0 +1,70 @@
+.signup-form {
+  width: 80%;
+  margin: auto;
+}
+
+.signup-title {
+  text-align: center;
+  color: #ff5454;
+}
+
+.signup-form input,
+.signup-form label,
+.signup-form select {
+  display: block;
+  width: 90%;
+  margin-top: 0.5rem;
+  /* text-align: center; */
+}
+
+.signup-form input,
+.signup-form select {
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.25rem;
+}
+
+.signup-form input:focus,
+.signup-form input:active {
+  outline: none;
+  background-color: aquamarine;
+  border-color: #19b84c;
+}
+
+.signup-form select {
+  width: 4rem;
+}
+
+.signup-form label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #373752;
+}
+
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label {
+  display: inline-block;
+  text-align: left;
+  width: 2rem;
+  font-size: 0.75rem;
+  color: black;
+  margin: 0;
+  margin-top: 1rem;
+  vertical-align: middle;
+}
+
+.signup-form input[type="checkbox"] + label {
+  width: 10rem;
+}
+
+.signup-form button {
+  display: block;
+  margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .signup-form input {
+    width: 50%;
+  }
+}

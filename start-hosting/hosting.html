@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>uHost Signup</title>
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="stylesheet" href="hosting.css" />
+  </head>
+
+  <body>
+    <div class="backdrop"></div>
+    <header class="main-header">
+      <span class="material-symbols-outlined">Menu</span>
+      <div class="brand-div">
+        <a href="../index.html" class="main-header__brand"> uHost </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__lists">
+          <li class="main-nav__list">
+            <a href="../packages/packages.html">Packages</a>
+          </li>
+          <li class="main-nav__list">
+            <a href="../customers/customers.html">Customers</a>
+          </li>
+          <li class="main-nav__list main-nav__list--cta">
+            <a href="../start-hosting/hosting.html">Start Hosting</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="mobile-nav">
+      <div class="brand-div">
+        <a href="../index.html" class="main-header__brand"> uHost </a>
+      </div>
+      <nav class="mobile-main-nav">
+        <ul class="mobile-main-nav__lists">
+          <li class="mobile-main-nav__list">
+            <a href="../Packages/packages.html">Packages</a>
+          </li>
+          <li class="mobile-main-nav__list">
+            <a href="../Customers/customers.html">Customers</a>
+          </li>
+          <li class="mobile-main-nav__list mobile-main-nav__list--cta">
+            <a href="../start-hosting/hosting.html">Start Hosting</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="signup-page">
+      <h1 class="signup-title">Awesome! Let's dive right in!</h1>
+      <form action="index.html" class="signup-form">
+        <label for="title">Title</label>
+        <select id="title">
+          <option value="mr">Mr.</option>
+          <option value="ms">Ms.</option>
+        </select>
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" />
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" />
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <input type="checkbox" id="agree-terms" />
+        <label for="agree-terms"
+          >Agree to
+          <a href="#">Terms &amp; Conditions</a>
+        </label>
+        <button type="submit" class="plan__button">Sign Up</button>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="#">Support</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="../shared.js"></script>
+  </body>
+</html>
